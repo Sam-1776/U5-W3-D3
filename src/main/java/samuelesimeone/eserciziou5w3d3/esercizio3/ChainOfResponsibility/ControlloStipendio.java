@@ -18,11 +18,12 @@ public class ControlloStipendio extends Filter{
             if (ufficiale.stipendio() == 1000){
                 continue;
             }
-            if (ufficiale.stipendio() == importo){
+            if (ufficiale.stipendio() <= importo){
                 System.out.println(ufficiale.toString());
             }else {
                 System.out.println(ufficiale.getNome() + " " +  ufficiale.getCognome() + " non percepisce questo stipendio");
             }
         }
+            this.next(ufficiali);
     }
 }

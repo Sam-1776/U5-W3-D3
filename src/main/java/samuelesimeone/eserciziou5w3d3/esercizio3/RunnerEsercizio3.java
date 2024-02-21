@@ -32,7 +32,7 @@ public class RunnerEsercizio3 implements CommandLineRunner {
         gerarchia.setPersone(colonnello);
         gerarchia.setPersone(generale);
 
-        ControlloStipendio controlloStipendio = new ControlloStipendio(2000);
+        ControlloStipendio controlloStipendio = new ControlloStipendio(6000);
 
         controlloStipendio.check(gerarchia);
 
