@@ -13,6 +13,7 @@ import java.util.Date;
 public class RunnerEsercizio1 implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("------------------------------------------------ Esercizio 1 -----------------------------------------------------------");
         Info infoUser = new Info("Andrea", "Sportillo",new Date());
         System.out.println(infoUser.toString());
         UserDataAdapter userDataAdapter = new UserDataAdapter(infoUser);
