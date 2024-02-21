@@ -2,7 +2,9 @@ package samuelesimeone.eserciziou5w3d3.esercizio1.classi;
 
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
+import java.util.Locale;
 
 @AllArgsConstructor
 public class UserDataAdapter implements DataSource{
@@ -16,7 +18,7 @@ public class UserDataAdapter implements DataSource{
     @Override
     public int getEta() {
         int year = info.getDataDiNascita().getYear();
-        Date thisYear = new Date();
+        LocalDate thisYear = LocalDate.now();
         int eta = thisYear.getYear() - year;
         return eta;
     }

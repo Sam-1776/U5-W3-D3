@@ -14,7 +14,7 @@ public class RunnerEsercizio1 implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         System.out.println("------------------------------------------------ Esercizio 1 -----------------------------------------------------------");
-        Info infoUser = new Info("Andrea", "Sportillo",new Date());
+        Info infoUser = new Info("Andrea", "Sportillo",new Date(1990, 02, 11));
         System.out.println(infoUser.toString());
         UserDataAdapter userDataAdapter = new UserDataAdapter(infoUser);
         UserData user = new UserData();
